@@ -5,3 +5,19 @@ under the BSD-style license found in the LICENSE file.
 
 Contributions should follow the same procedure as for the Go project:
 http://golang.org/doc/contribute.html
+
+To test out this localised Go Tour on your machine, make sure that you have git
+and hg (mercurial) installed on your system and do the following:
+
+```
+cd && mkdir go
+export GOPATH=~/go
+go get golang.org/x/net # ignore the errors
+go get golang.org/x/tools
+go get code.google.com/p/go-tour
+cd $GOPATH/src/code.google.com/p/
+rm -rf go-tour/
+git clone https://github.com/kostich/go-tour-SR go-tour
+cd go-tour/gotour/
+go build; ./gotour
+```

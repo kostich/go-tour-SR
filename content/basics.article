@@ -23,14 +23,14 @@ http://golang.org
 
 * Увоз
 
-Овај код групише увозе између заграда, у такозвану „прорачунату“ увозну изјаву.
+Овај код групише увозе између заграда, у такозвану „збирну“ увозну изјаву.
 
 Можете писати вишеструке изјаве увоза и као:
 
 	import "fmt"
 	import "math"
 
-али је пожељно користити „прорачунату“ увозну изјаву.
+али је пожељно користити „збирну“ увозну изјаву.
 
 .play basics/imports.go
 
@@ -137,8 +137,8 @@ http://golang.org
 	complex64 complex128 // велики бројеви
 
 Овај пример показује променљиве више врста,
-и показује да се декларације променљивих могу "прорачунати“ у блокове,
-као што је то случај са увозним изјавама.
+и показује да се декларације променљивих могу „збројити“ у блокове,
+као што је то случај са збирним увозним изјавама.
 
 .play basics/basic-types.go
 
@@ -198,28 +198,29 @@ _нулту_вредност_.
 
 .play basics/type-inference.go
 
-* Constants
+* Константе
 
-Constants are declared like variables, but with the `const` keyword.
+Константе се декларишу слично као и променљиве. За декларисање се користи реч `const`.
 
-Constants can be character, string, boolean, or numeric values.
+Константа може бити слово, реч, исказ истинитости или бројевна вредност.
 
-Constants cannot be declared using the `:=` syntax.
+Константе се не могу декларисати користећи `:=` синтаксу.
 
 .play basics/constants.go
 
-* Numeric Constants
+* Нумеричке константе
 
-Numeric constants are high-precision _values_.
+Нумеричке константе су веома прецизне _вредности_.
 
-An untyped constant takes the type needed by its context.
+Константа без врсте узима врсту на основу своје вредности.
 
-Try printing `needInt(Big)` too.
+Пробајте да такође одштампате `needInt(Big)`.
 
 .play basics/numeric-constants.go
 
-* Congratulations!
+* Честитамо!
 
-You finished this lesson!
+Завршили сте ову лекцију!
 
-You can go back to the list of [[/list][modules]] to find what to learn next, or continue with the [[javascript:click('.next-page')][next lesson]].
+Можете се вратити на списак [[/list][модула]] да бисте видели шта можете да научите следеће или можете
+наставити на [[javascript:click('.next-page')][следећу лекцију]].
